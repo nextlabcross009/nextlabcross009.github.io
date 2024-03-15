@@ -22,7 +22,7 @@
         document.addEventListener('DOMContentLoaded', async (event) => {
             try {
                 // Markdownファイルのパス
-                const filePath = '/docs/md/about.md';
+                const filePath = '/md/about.md';
                 // ファイルをフェッチしてテキストとして取得
                 const response = await fetch(filePath);
                 const markdownText = await response.text();

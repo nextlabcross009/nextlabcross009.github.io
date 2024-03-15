@@ -25,7 +25,7 @@
 楽しい本格回転ずし、あなたもかわいいペンギンになっておいしいお寿司を食べつくそう
 <br>
 
-![pne1](/docs/images/games/pen1.png)
+![pne1](/images/games/pen1.png)
 https://www.youtube.com/watch?v=M-leNRzJ5G0
 
 <br>
@@ -38,27 +38,27 @@ https://www.youtube.com/watch?v=M-leNRzJ5G0
 限界までお寿司を食べつくそう！
 <br>
 
-![pne1](/docs/images/games/pen2.png)
+![pne1](/images/games/pen2.png)
 <br>
 
 ### MyLifeGame
 ライフゲームです。
 <br>
 
-![mylifegame](/docs/images/games/mylifegame.png)
+![mylifegame](/images/games/mylifegame.png)
 <br>
 
 ### SukuraGather
 桜になりたい。。。桜の花びらをあつめればなれるかも・・・
 <br>
 
-![pnesakuraGather01](/docs/images/games/sakuraGather01.png)
-![pnesakuraGather02](/docs/images/games/sakuraGather02.png)
+![pnesakuraGather01](/images/games/sakuraGather01.png)
+![pnesakuraGather02](/images/games/sakuraGather02.png)
 <br>
 
 ### 密です！Social distance
 距離を取ろう。すべてから。
 <br>
 
-![mitudesu](/docs/images/games/mitudesu.png)
+![mitudesu](/images/games/mitudesu.png)
 <br>
