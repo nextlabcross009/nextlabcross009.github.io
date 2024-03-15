@@ -1,7 +1,10 @@
 {
     "folders": [
-        {
-            "path": "../../pagesmain"
-        }
-    ]
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.encoding": "utf8"
+	}
 }
