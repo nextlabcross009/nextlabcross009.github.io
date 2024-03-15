@@ -5,7 +5,7 @@
 [プロフィールへ](pages/about.html)<br><br>
 
 ## ゲーム紹介
-[ゲーム一覧へ](pages/games.htm)<br><br>
+[ゲーム一覧へ](pages/games.html)<br><br>
   
 ## リンク
 - [Qiita](https://qiita.com/sebunwork009)  
