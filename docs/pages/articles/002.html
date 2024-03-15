@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プロフィール - NEXTLAB</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>記事 - NEXTLAB</title>
+    <link rel="stylesheet" href="/docs/css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-    <my-header></my-header>
+    <my-header styles-path="/docs/css/styles.css"></my-header>
     <navigation-bar 
-        styles-path="../css/styles.css"
-        path-top-define="../">
+        styles-path="/docs/css/styles.css"
+        path-top-define="/docs/">
     </navigation-bar>
     <div class="main-content">
         <div id="content"></div>
     </div>
-    <my-footer></my-footer>
+    <my-footer styles-path="/docs/css/styles.css"></my-footer>
     <script>
         // DOMが読み込まれた後に実行
         document.addEventListener('DOMContentLoaded', async (event) => {
             try {
                 // Markdownファイルのパス
-                const filePath = '/docs/md/about.md';
+                const filePath = '/docs/md/articles/002_wordpress_and_mk.md';
                 // ファイルをフェッチしてテキストとして取得
                 const response = await fetch(filePath);
                 const markdownText = await response.text();
@@ -35,6 +35,6 @@
             }
         });
     </script>
-    <script src="../js/base-js.js"></script>
+    <script src="/docs/js/base-js.js"></script>
 </body>
 </html>

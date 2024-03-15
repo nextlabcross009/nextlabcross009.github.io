@@ -3,62 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXTLAB - ゲーム一覧</title>
+    <title>ゲーム一覧 - NEXTLAB</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <h1>NEXTLAB</h1>
-        <p>次の新しいゲームへ</p>
-    </header>
-    <nav class="navigation">
-        <ul>
-            <li><a href="../index.html">ホーム</a></li>
-            <li><a href="games.html">ゲーム一覧</a></li>
-            <li><a href="articles.html">記事</a></li>
-            <li><a href="contact.html">連絡先</a></li>
-            <li><a href="about.html">プロフィール</a></li>
-            <li><a href="privacy.html">プライシーポリシー</a></li>
-        </ul>
-    </nav>
+    <my-header></my-header>
+    <navigation-bar 
+        styles-path="../css/styles.css"
+        path-top-define="../">
+    </navigation-bar>
     <div class="main-content">
-        <article class="content">
-            <h2>ゲーム一覧</h2>
-            <section class="game-list">
-                <!-- ゲーム一覧を表示するセクション -->
-                <div class="game">
-                    <h3>ゲームタイトル1</h3>
-                    <p>ゲームの説明がここに入ります。</p>
-                </div>
-                <div class="game">
-                    <h3>ゲームタイトル2</h3>
-                    <p>ゲームの説明がここに入ります。</p>
-                </div>
-                <!-- 他のゲームの情報も同様に追加 -->
-            </section>
-        </article>
-        <article class="content">
-            <h2>ゲーム一覧</h2>
-            <section class="game-list">
-                <!-- ゲーム一覧を表示するセクション -->
-                <div class="game">
-                    <h3>ゲームタイトル1</h3>
-                    <p>ゲームの説明がここに入ります。</p>
-                </div>
-                <div class="game">
-                    <h3>ゲームタイトル2</h3>
-                    <p>ゲームの説明がここに入ります。</p>
-                </div>
-                <!-- 他のゲームの情報も同様に追加 -->
-            </section>
-        </article>
-        <aside class="sidebar">
-            <!-- サイドバーの内容は元のページと同じ、または関連する内容を表示 -->
-            <!-- ここでは省略 -->
-        </aside>
+        <div id="content"></div>
     </div>
-    <footer class="footer">
-        <p>&copy; 2024 NEXTLAB. All rights reserved.</p>
-    </footer>
+    <my-footer></my-footer>
+    <script>
+        // DOMが読み込まれた後に実行
+        document.addEventListener('DOMContentLoaded', async (event) => {
+            try {
+                // Markdownファイルのパス
+                const filePath = '/docs/md/games.md';
+                // ファイルをフェッチしてテキストとして取得
+                const response = await fetch(filePath);
+                const markdownText = await response.text();
+                // MarkdownテキストをHTMLに変換
+                const htmlContent = marked.parse(markdownText);
+                // コンテンツをページに表示
+                document.getElementById('content').innerHTML = htmlContent;
+            } catch (error) {
+                console.error('Markdownファイルの読み込みに失敗しました', error);
+            }
+        });
+    </script>
+    <script src="../js/base-js.js"></script>
 </body>
 </html>

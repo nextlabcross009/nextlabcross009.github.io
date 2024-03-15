@@ -5,22 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>プライバシーポリシー - NEXTLAB</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <h1>NEXTLAB</h1>
-        <p>次の新しいゲームへ</p>
-    </header>
-    <nav class="navigation">
-        <ul>
-            <li><a href="../index.html">ホーム</a></li>
-            <li><a href="games.html">ゲーム一覧</a></li>
-            <li><a href="articles/articles.html">記事</a></li>
-            <li><a href="contact.html">連絡先</a></li>
-            <li><a href="profile.html">プロフィール</a></li>
-            <li><a href="privacy.html">プライシーポリシー</a></li>
-        </ul>
-    </nav>
+    <my-header></my-header>
+    <navigation-bar 
+        styles-path="../css/styles.css"
+        path-top-define="../">
+    </navigation-bar>
     <div class="main-content">
         <article class="content">
             <h2>プライバシーポリシー</h2>
@@ -43,7 +35,7 @@
             <h3>広告会社に提供している情報</h3>
             <p>このアプリは第三者によって提供されている広告を利用しています。
                 一部の情報は広告会社に送信されております。
-                広告会社のプライバシーポリシーは以下です。
+                広告会社のプライバシーポリシーは以下です。<br>
                 Google :https://www.google.com/intl/ja/policies/privacy/</p>
 
             <!-- その他のセクションも同様に追加 -->
@@ -62,5 +54,8 @@
 
         </article>
     </div>
-    <footer class="footer">
+    <my-footer styles-path="../css/styles.css"></my-footer>
+    <script src="../js/base-js.js"></script>
+</body>
+
        

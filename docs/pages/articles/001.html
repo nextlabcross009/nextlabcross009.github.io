@@ -3,47 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>‹L– - NEXTLAB</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>è¨˜äº‹ - NEXTLAB</title>
+    <link rel="stylesheet" href="/docs/css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <h1>NEXTLAB</h1>
-        <p>Ÿ‚ÌV‚µ‚¢ƒQ[ƒ€‚Ö</p>
-    </header>
-    <nav class="navigation">
-        <ul>
-            <li><a href="../index.html">ƒz[ƒ€</a></li>
-            <li><a href="games.html">ƒQ[ƒ€ˆê——</a></li>
-            <li><a href="articles.html">‹L–</a></li>
-            <li><a href="contact.html">˜A—æ</a></li>
-            <li><a href="about.html">ƒvƒƒtƒB[ƒ‹</a></li>
-            <li><a href="privacy.html">ƒvƒ‰ƒCƒV[ƒ|ƒŠƒV[</a></li>
-        </ul>
-    </nav>
+    <my-header styles-path="/docs/css/styles.css"></my-header>
+    <navigation-bar 
+        styles-path="/docs/css/styles.css"
+        path-top-define="/docs/">
+    </navigation-bar>
     <div class="main-content">
-        <textarea id="markdown-article" style="display: none;">
-# ÅV‚ÌƒQ[ƒ€ƒŒƒrƒ…[
-
-2024”NÅ‚àŠú‘Ò‚³‚ê‚éƒQ[ƒ€‚Ìˆê‚Â‚Å‚ ‚éuƒTƒCƒo[”EÒv‚ÌƒŒƒrƒ…[‚ğ‚¨“Í‚¯‚µ‚Ü‚·B
-
-## ƒQ[ƒ€ƒvƒŒƒC
-
-uƒTƒCƒo[”EÒv‚ÍA‘¬‚³‚Æíp‚ªd—v‚ÈƒAƒNƒVƒ‡ƒ“ƒQ[ƒ€‚Å‚·BƒvƒŒƒCƒ„[‚Í...
-
-<!-- ‚±‚±‚É‹L–‚Ì–{•¶‚ğMarkdownŒ`®‚Å‹Lq -->
-        </textarea>
-        <div id="article-content"></div>
+        <div id="content"></div>
     </div>
-    <footer class="footer">
-        <p>&copy; 2024 NEXTLAB. All rights reserved.</p>
-    </footer>
+    <my-footer styles-path="/docs/css/styles.css"></my-footer>
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            document.getElementById('article-content').innerHTML =
-                marked.parse(document.getElementById('markdown-article').value);
+        // DOMãŒèª­ã¿è¾¼ã¾ã‚ŒãŸå¾Œã«å®Ÿè¡Œ
+        document.addEventListener('DOMContentLoaded', async (event) => {
+            try {
+                // Markdownãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹
+                const filePath = '/docs/md/articles/001_cheese.md';
+                // ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ•ã‚§ãƒƒãƒã—ã¦ãƒ†ã‚­ã‚¹ãƒˆã¨ã—ã¦å–å¾—
+                const response = await fetch(filePath);
+                const markdownText = await response.text();
+                // Markdownãƒ†ã‚­ã‚¹ãƒˆã‚’HTMLã«å¤‰æ›
+                const htmlContent = marked.parse(markdownText);
+                // ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚’ãƒšãƒ¼ã‚¸ã«è¡¨ç¤º
+                document.getElementById('content').innerHTML = htmlContent;
+            } catch (error) {
+                console.error('Markdownãƒ•ã‚¡ã‚¤ãƒ«ã®èª­ã¿è¾¼ã¿ã«å¤±æ•—ã—ã¾ã—ãŸ', error);
+            }
         });
     </script>
+    <script src="/docs/js/base-js.js"></script>
 </body>
 </html>

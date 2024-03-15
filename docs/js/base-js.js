@@ -66,16 +66,19 @@ class NavigationBar extends HTMLElement {
     super(); // HTMLElementのコンストラクタを呼び出す
     this.attachShadow({ mode: 'open' }); // シャドウDOMを開く
     const stylesPath = this.getAttribute('styles-path') || '../css/styles.css';
+    const pathTopDefine = this.getAttribute('path-top-define') || '';
+    const pathPagesDefine = this.getAttribute('path-pages-define') || "pages/";
+
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="${stylesPath}">
       <nav class="navigation">
         <ul>
-          <li><a href="../index.html">ホーム</a></li>
-          <li><a href="../pages/games.html">ゲーム一覧</a></li>
-          <li><a href="../pages/articles/articles.html">記事一覧</a></li>
-          <li><a href="../pages/contact.html">連絡先</a></li>
-          <li><a href="../pages/about.html">プロフィール</a></li>
-          <li><a href="../pages/privacy.html">プライシーポリシー</a></li>
+          <li><a href="${pathTopDefine}index.html">ホーム</a></li>
+          <li><a href="${pathTopDefine}${pathPagesDefine}games.html">ゲーム一覧</a></li>
+          <li><a href="${pathTopDefine}${pathPagesDefine}articles/articles.html">記事一覧</a></li>
+          <li><a href="${pathTopDefine}${pathPagesDefine}contact.html">連絡先</a></li>
+          <li><a href="${pathTopDefine}${pathPagesDefine}about.html">プロフィール</a></li>
+          <li><a href="${pathTopDefine}${pathPagesDefine}privacy.html">プライシーポリシー</a></li>
         </ul>
       </nav>
     `;
