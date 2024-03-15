@@ -17,20 +17,14 @@
     </div>
     <my-footer styles-path="css/styles.css"></my-footer>
     <script>
-        // DOMが読み込まれた後に実行
         document.addEventListener('DOMContentLoaded', async (event) => {
             try {
-                // Markdownファイルのパス
                 const filePath = 'md/index.md';
-                // ファイルをフェッチしてテキストとして取得
                 const response = await fetch(filePath);
                 const markdownText = await response.text();
-                // MarkdownテキストをHTMLに変換
                 const htmlContent = marked.parse(markdownText);
-                // コンテンツをページに表示
                 document.getElementById('content').innerHTML = htmlContent;
             } catch (error) {
-                console.error('Markdownファイルの読み込みに失敗しました', error);
             }
         });
     </script>
