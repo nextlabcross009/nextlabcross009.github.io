@@ -72,16 +72,13 @@ class MySidebar extends HTMLElement {
       <aside class="sidebar">
           <h4>カテゴリー</h4>
           <ul>
-              <li><a href="#">ウェブ開発</a></li>
-              <li><a href="#">プログラミング言語</a></li>
-              <li><a href="#">ツールとリソース</a></li>
-              <li><a href="#">イベントとニュース</a></li>
+              <li><a href="#">開発中</a></li>
+              <li><a href="#">開発中</a></li>
           </ul>
           <h4>アーカイブ</h4>
           <ul>
-              <li><a href="#">2024年3月</a></li>
-              <li><a href="#">2024年2月</a></li>
-              <li><a href="#">2024年1月</a></li>
+              <li><a href="#">開発中</a></li>
+              <li><a href="#">開発中</a></li>
           </ul>
       </aside>
     `;
