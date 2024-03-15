@@ -5,37 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEXTLAB</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <my-header styles-path="css/styles.css"></my-header>
     <navigation-bar styles-path="css/styles.css"></navigation-bar>
 
     <div class="main-content">
-        <article class="content">
-            <h2>NEXTLABとは</h2>
-            <section class="post">
-                <h3>なし</h3>
-            </section>
-            <section class="post">
-            </section>
-        </article>
-        <aside class="sidebar">
-            <h4>カテゴリー</h4>
-            <ul>
-                <li><a href="#">ウェブ開発</a></li>
-                <li><a href="#">プログラミング言語</a></li>
-                <li><a href="#">ツールとリソース</a></li>
-                <li><a href="#">イベントとニュース</a></li>
-            </ul>
-            <h4>アーカイブ</h4>
-            <ul>
-                <li><a href="#">2024年3月</a></li>
-                <li><a href="#">2024年2月</a></li>
-                <li><a href="#">2024年1月</a></li>
-            </ul>
-        </aside>
+        <textarea id="markdown" style="display: none;">
+## NEXTLABとは
+作ったゲームの紹介場所です。<br><br>
+  
+## どんな人？
+[プロフィールへ](pages/about.html)<br><br>
+
+## ゲーム紹介
+[ゲーム一覧へ](pages/games.htm)<br><br>
+  
+## リンク
+- [Qiita](https://qiita.com/sebunwork009)  
+- [Note](https://note.com/satousui009/)  
+- [UnityRoom](https://unityroom.com/users/cg0v5eit1x43kfd2bq9l)  
+- [X](https://twitter.com/Satousui009)  
+- [GooglePlay](https://play.google.com/store/apps/developer?id=Cross009)  
+- [GitHub](https://github.com/nextlabcross009/nextlabcross009.github.io)  
+<br><br>
+## 連絡先
+Email: nextlabo009@gmail.com
+<br><br>
+
+        </textarea>
+        <div id="content"></div>
+    <my-sidebar></my-sidebar>
     </div>
     <my-footer styles-path="css/styles.css"></my-footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('content').innerHTML =
+                marked.parse(document.getElementById('markdown').value);
+        });
+    </script>
     <script src="js/base-js.js"></script>
 </body>
 </html>
