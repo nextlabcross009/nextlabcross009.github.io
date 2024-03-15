@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <my-header></my-header>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <navigation-bar></navigation-bar>
+    <div class="main-content">
+        <textarea id="markdown" style="display: none;">
+## 基本情報
+
+名前: 山田太郎  
+職業: ゲーム開発者  
+所属: NEXTLAB株式会社
+
+## 経歴
+
+山田太郎は2000年にNEXTLABを設立しました。それ以前は、大手ゲーム会社でディレクターとして勤務していました。
+
+## スキル
+
+- ゲームデザイン
+- プログラミング（C++, Unity, Unreal Engine）
+- プロジェクトマネジメント
+
+## 連絡先
+
+Email: taro@nextlab.co.jp  
+Twitter: @nextlab_taro
+        </textarea>
+        <div id="content"></div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 NEXTLAB. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('content').innerHTML =
+                marked.parse(document.getElementById('markdown').value);
+        });
+    </script>
+        <script src="../js/navigation-bar.js"></script>
+    <script src="../js/my-header.js"></script>
+</body>
+</html>

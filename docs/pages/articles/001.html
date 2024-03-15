@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記事 - NEXTLAB</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>NEXTLAB</h1>
+        <p>次の新しいゲームへ</p>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="../index.html">ホーム</a></li>
+            <li><a href="games.html">ゲーム一覧</a></li>
+            <li><a href="articles.html">記事</a></li>
+            <li><a href="contact.html">連絡先</a></li>
+            <li><a href="about.html">プロフィール</a></li>
+            <li><a href="privacy.html">プライシーポリシー</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <textarea id="markdown-article" style="display: none;">
+# 最新のゲームレビュー
+
+2024年最も期待されるゲームの一つである「サイバー忍者」のレビューをお届けします。
+
+## ゲームプレイ
+
+「サイバー忍者」は、速さと戦術が重要なアクションゲームです。プレイヤーは...
+
+<!-- ここに記事の本文をMarkdown形式で記述 -->
+        </textarea>
+        <div id="article-content"></div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 NEXTLAB. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('article-content').innerHTML =
+                marked.parse(document.getElementById('markdown-article').value);
+        });
+    </script>
+</body>
+</html>
