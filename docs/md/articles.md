@@ -7,4 +7,5 @@
 
 ## ローカル記事
 
-- [チーズはどこへ行った感想](/docs/pages/articles/001.html)  
+- [チーズはどこへ行った感想](/pages/articles/001.html)  
+- [WordPressでMarkdownを使おう](/pages/articles/002.html)  
