@@ -12,38 +12,26 @@
     <navigation-bar styles-path="css/styles.css"></navigation-bar>
 
     <div class="main-content">
-        <textarea id="markdown" style="display: none;">
-## NEXTLABとは
-作ったゲームの紹介場所です。<br><br>
-  
-## どんな人？
-[プロフィールへ](pages/about.html)<br><br>
-
-## ゲーム紹介
-[ゲーム一覧へ](pages/games.htm)<br><br>
-  
-## リンク
-- [Qiita](https://qiita.com/sebunwork009)  
-- [Note](https://note.com/satousui009/)  
-- [UnityRoom](https://unityroom.com/users/cg0v5eit1x43kfd2bq9l)  
-- [X](https://twitter.com/Satousui009)  
-- [GooglePlay](https://play.google.com/store/apps/developer?id=Cross009)  
-- [GitHub](https://github.com/nextlabcross009/nextlabcross009.github.io)  
-<br><br>
-## 連絡先
-Email: <foo>nextlabo009</foo>@gmail.com
-<br><br>
-
-        </textarea>
-
-        <div id="content"></div>
+    <div id="content"></div>
     <my-sidebar styles-path="css/styles.css"></my-sidebar>
     </div>
     <my-footer styles-path="css/styles.css"></my-footer>
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            document.getElementById('content').innerHTML =
-                marked.parse(document.getElementById('markdown').value);
+        // DOMが読み込まれた後に実行
+        document.addEventListener('DOMContentLoaded', async (event) => {
+            try {
+                // Markdownファイルのパス
+                const filePath = 'md/index.md';
+                // ファイルをフェッチしてテキストとして取得
+                const response = await fetch(filePath);
+                const markdownText = await response.text();
+                // MarkdownテキストをHTMLに変換
+                const htmlContent = marked.parse(markdownText);
+                // コンテンツをページに表示
+                document.getElementById('content').innerHTML = htmlContent;
+            } catch (error) {
+                console.error('Markdownファイルの読み込みに失敗しました', error);
+            }
         });
     </script>
     <script src="js/base-js.js"></script>
