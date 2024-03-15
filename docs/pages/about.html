@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <my-header></my-header>
-
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>プロフィール - NEXTLAB</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+    <my-header></my-header>
     <navigation-bar></navigation-bar>
     <div class="main-content">
         <textarea id="markdown" style="display: none;">
@@ -35,16 +35,15 @@ Twitter: @nextlab_taro
         </textarea>
         <div id="content"></div>
     </div>
-    <footer class="footer">
-        <p>&copy; 2024 NEXTLAB. All rights reserved.</p>
-    </footer>
+    <my-footer></my-footer>
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             document.getElementById('content').innerHTML =
                 marked.parse(document.getElementById('markdown').value);
         });
     </script>
-        <script src="../js/navigation-bar.js"></script>
+    <script src="../js/my-footer.js"></script>
+    <script src="../js/navigation-bar.js"></script>
     <script src="../js/my-header.js"></script>
 </body>
 </html>

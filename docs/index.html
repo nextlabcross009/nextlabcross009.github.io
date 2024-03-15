@@ -7,20 +7,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <h1>NEXTLAB</h1>
-        <p>次の新しいゲームへ</p>
-    </header>
-    <nav class="navigation">
-        <ul>
-            <li><a href="index.html">ホーム</a></li>
-            <li><a href="pages/games.html">ゲーム一覧</a></li>
-            <li><a href="pages/articles/articles.html">記事一覧</a></li>
-            <li><a href="pages/contact.html">連絡先</a></li>
-            <li><a href="pages/about.html">プロフィール</a></li>
-            <li><a href="pages/privacy.html">プライシーポリシー</a></li>
-        </ul>
-    </nav>
+    <my-header styles-path="css/styles.css"></my-header>
+    <navigation-bar styles-path="css/styles.css"></navigation-bar>
+
     <div class="main-content">
         <article class="content">
             <h2>NEXTLABとは</h2>
@@ -46,8 +35,8 @@
             </ul>
         </aside>
     </div>
-    <footer class="footer">
-        <p>&copy; 2024 NEXTLAB. All rights reserved.</p>
-    </footer>
+    <my-footer styles-path="css/styles.css"></my-footer>
+    <base></base>
+    <script src="js/base.js"></script>
 </body>
 </html>

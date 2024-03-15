@@ -4,8 +4,9 @@ class NavigationBar extends HTMLElement {
     constructor() {
       super(); // HTMLElementのコンストラクタを呼び出す
       this.attachShadow({ mode: 'open' }); // シャドウDOMを開く
+      const stylesPath = this.getAttribute('styles-path') || '../css/styles.css';
       this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="${stylesPath}">
         <nav class="navigation">
           <ul>
             <li><a href="../index.html">ホーム</a></li>
