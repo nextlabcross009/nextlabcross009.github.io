@@ -14,6 +14,8 @@
 - [X](https://twitter.com/Satousui009)  
 - [GooglePlay](https://play.google.com/store/apps/developer?id=Cross009)  
 - [GitHub](https://github.com/nextlabcross009/nextlabcross009.github.io)  
+- [Youtube](https://www.youtube.com/@nextlabo4023)  
+
 <br><br>
 ## 連絡先
 Email: <foo>nextlabo009</foo>@gmail.com
