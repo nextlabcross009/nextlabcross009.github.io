@@ -14,9 +14,45 @@
     <div class="main-content">
         <div id="content"></div>
         <my-sidebar styles-path="css/styles.css"></my-sidebar>
+
+
+    </div>
+    <!-- カウンタ表示 -->
+    <div class="counter-container">
+        counter: <span id="counter">0</span>
     </div>
     <my-footer styles-path="css/styles.css"></my-footer>
     <script>
+        //カウンタ処理開始
+        // デバッグモードの設定（trueで制限解除）
+        const DEBUG_MODE = false;
+
+        function IncreaseCounter() {
+            const today = new Date().toISOString().split('T')[0];
+            const lastCountDate = localStorage.getItem('lastCountDate');
+            
+            if (!DEBUG_MODE && today === lastCountDate) {
+                // デバッグモードでなく、今日が最後にカウントアップした日付と同じ場合、何もしない
+                return;
+            }
+
+            let count = parseInt(localStorage.getItem('count') || '0', 10);
+            count++;
+            localStorage.setItem('count', count);
+            if (!DEBUG_MODE) { // デバッグモードでない場合のみ、最後のカウントアップ日を更新
+                localStorage.setItem('lastCountDate', today);
+            }
+            document.getElementById("counter").innerText = count;
+        }
+
+        function InitializeCounter() {
+            const count = localStorage.getItem('count') || '0';
+            document.getElementById("counter").innerText = count;
+            IncreaseCounter(); // ページ読み込み時に自動的にカウントアップ
+        }
+        // DOMが読み込まれた後に実行する処理の前にカウンタを初期化
+        InitializeCounter();
+        //カウンタ処理終了
         // DOMが読み込まれた後に実行
         document.addEventListener('DOMContentLoaded', async (event) => {
             try {
