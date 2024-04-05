@@ -72,6 +72,7 @@ body {
 .counter-container {
     padding: 3rem;
     flex: 3;
+    text-align: left;
 }
 
 .content {
