@@ -1,4 +1,18 @@
 ## ゲーム一覧
+
+### ブラックアンドホワイトバトル -リバーシ-
+![revershi01](/images/games/revershi01.png)
+
+- [UnityRoom](https://unityroom.com/games/bwbbattle)  
+
+「ブラックアンドホワイトバトル」は、クラシックなリバーシに新たな風を吹き込んだ戦略バトルゲームです。このゲームでは、プレイヤーは自らの知恵と戦略を駆使して対戦相手と頭脳戦を繰り広げます。このシンプルながらも奥深いゲームは、次第にその複雑さを増していきます。
+
+特徴：
+
+多様な難易度設定： 初心者から上級者まで楽しめるよう、簡単、普通、難しいの三つのレベルを用意。
+対戦モード多彩： 人間対人間、人間対CPUという異なるモードで、さまざまな挑戦が可能です。
+視覚的に魅力的なデザイン： 盤面とピースは見た目も美しく、直感的に操作ができます
+
 ### 名前作る君
 - [UnityRoom](https://unityroom.com/games/nameeditor)  
 - [GooglePlay](https://play.google.com/store/apps/details?id=com.nextlabo.NameEditor)  
