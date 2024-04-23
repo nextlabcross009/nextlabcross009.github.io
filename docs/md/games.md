@@ -14,6 +14,7 @@
 視覚的に魅力的なデザイン： 盤面とピースは見た目も美しく、直感的に操作ができます
 
 ### 名前作る君
+![namaetukuru01](/images/games/namaetukuru01.png)
 - [UnityRoom](https://unityroom.com/games/nameeditor)  
 - [GooglePlay](https://play.google.com/store/apps/details?id=com.nextlabo.NameEditor)  
 
@@ -23,6 +24,7 @@
 
 
 ### がんばれボタン
+![ganbare01](/images/games/ganbare01.png)
 - [UnityRoom](https://unityroom.com/games/ganbarebutton)  
 - [GooglePlay](https://play.google.com/store/apps/details?id=com.nextlabo.GanbareButton)  
 
