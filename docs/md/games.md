@@ -1,7 +1,7 @@
 ## ゲーム一覧
 
 ### ブラックアンドホワイトバトル -リバーシ-
-![revershi01](/images/games/revershi01.png)
+![revershi01](/images/games/revarshi01.png)
 
 - [UnityRoom](https://unityroom.com/games/bwbbattle)  
 
@@ -14,7 +14,7 @@
 視覚的に魅力的なデザイン： 盤面とピースは見た目も美しく、直感的に操作ができます
 
 ### 名前作る君
-![namaetukuru01](/images/games/namaetukuru01.png)
+![namaetukuru01](/images/games/namaetukuru01.jpg)
 - [UnityRoom](https://unityroom.com/games/nameeditor)  
 - [GooglePlay](https://play.google.com/store/apps/details?id=com.nextlabo.NameEditor)  
 
