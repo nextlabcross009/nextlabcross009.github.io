@@ -1,7 +1,14 @@
 ## ゲーム一覧
 
+<br>
+<br>
+
 ### ブラックアンドホワイトバトル -リバーシ-
+<br>
+
 ![revershi01](/images/games/revarshi01.png)
+
+<br>
 
 - [UnityRoom](https://unityroom.com/games/bwbbattle)  
 
@@ -13,8 +20,17 @@
 対戦モード多彩： 人間対人間、人間対CPUという異なるモードで、さまざまな挑戦が可能です。
 視覚的に魅力的なデザイン： 盤面とピースは見た目も美しく、直感的に操作ができます
 
+<br>
+<br>
+<br>
+
 ### 名前作る君
+<br>
+
 ![namaetukuru01](/images/games/namaetukuru01.jpg)
+
+<br>
+
 - [UnityRoom](https://unityroom.com/games/nameeditor)  
 - [GooglePlay](https://play.google.com/store/apps/details?id=com.nextlabo.NameEditor)  
 
@@ -22,9 +38,18 @@
 
 名前作成がこれまでになく簡単になりました。当アプリでは、あなたの要望に合わせてオリジナルの名前を瞬時に作成できます。操作はとてもシンプルです。以下のステップに従ってください。
 
+<br>
+<br>
+<br>
 
 ### がんばれボタン
+
+<br>
+
 ![ganbare01](/images/games/ganbare01.png)
+
+<br>
+
 - [UnityRoom](https://unityroom.com/games/ganbarebutton)  
 - [GooglePlay](https://play.google.com/store/apps/details?id=com.nextlabo.GanbareButton)  
 
