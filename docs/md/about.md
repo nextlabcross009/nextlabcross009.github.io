@@ -24,7 +24,7 @@ Unity：6年
 - [Note](https://note.com/satousui009/)  
 - [UnityRoom](https://unityroom.com/users/cg0v5eit1x43kfd2bq9l)  
 - [X](https://twitter.com/Satousui009)  
-- [GooglePlay](https://play.google.com/store/apps/developer?id=Cross009)  
+- [GooglePlay](https://play.google.com/store/apps/dev?id=7763479131737747522)  
 - [GitHub](https://github.com/nextlabcross009/nextlabcross009.github.io)  
 - [Youtube](https://www.youtube.com/@nextlabo4023)  
 
